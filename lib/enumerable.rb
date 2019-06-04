@@ -7,8 +7,9 @@ end
 
 def using_select(array)
   array.select do |string|
-    "'#{string}".join(",")
-  
+    string.is_a?(String)
+  end
+
 end
 
 def using_find(array)
